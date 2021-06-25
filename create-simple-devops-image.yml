@@ -16,5 +16,5 @@
       command: docker push chaitumandepu/simple-devops-image
 
     - name: remove docker images from ansible server
-      command: docker rmi tomcat simple-devops-image:latest chaitumandepu/simple-devops-image
+      command: docker rmi -f tomcat simple-devops-image:latest chaitumandepu/simple-devops-image
       ignore_errors: yes
